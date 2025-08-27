@@ -1,8 +1,15 @@
-function App() {
-  return (
-    <>
-      <h1 className="text-2xl font-bold text-blue-500">Hello Tailwind</h1>
-    </>
-  )
+import { Outlet } from "react-router-dom"
+import NavBar from "./components/NavBar"
+
+const App = () => {
+    return (
+        <div>
+            <NavBar />
+            <main>
+                <Outlet />
+            </main>
+        </div>
+    )
 }
-export default App
+
+export default App;
